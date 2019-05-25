@@ -1,4 +1,4 @@
 #!/usr/bin/env groovy
 def call() {
-    sh 'pwd'
+    sh 'echo pwd'
 }
