@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-def call(String imageNamem,String userNameDockerHub){
+def call(String imageName){
   sh 'pwd'
   echo "${imageName}"
   sh "sudo docker build -t ${imageName} ."
