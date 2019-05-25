@@ -2,5 +2,6 @@
 def call(String imageName){
   sh 'pwd'
   echo "${imageName}"
-  sh 'sudo docker build -t ${imageName} .'
+  sh 'sudo docker build -t "${imageName}" .'
 }
+
