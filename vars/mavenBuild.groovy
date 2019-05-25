@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
 def call(String MVN_HOME){
-        sh '${MVN_HOME}/bin/mvn clean package'
+        withEnv(["mvnHome=${MVN_HOME}"]){
+        sh '${mvnHome}/bin/mvn clean package'
 }
